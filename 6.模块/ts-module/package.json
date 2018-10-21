@@ -1,0 +1,16 @@
+{
+  "name": "ts-module",
+  "version": "1.0.0",
+  "description": "1.初始化 typescript 编译配置 会自动生成 tsconfig.json ```     $ tsc --init ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.21",
+    "jquery": "^3.3.1"
+  }
+}
