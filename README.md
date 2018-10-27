@@ -13,3 +13,9 @@
  $ sudo npm install -g ts-node
 ```
 
+
+
+比较好的基础学习网站
+[TypeScript 入门教程](https://ts.xcatliu.com/)
+[TypeScript 中文官网](https://www.tslang.cn/docs/handbook/generics.html)
+[TypeScript 英文官网](http://www.typescriptlang.org/docs/handbook/declaration-merging.html)
