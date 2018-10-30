@@ -11,5 +11,8 @@ interface coord3 extends coord{ // 接口之间的继承需要用extends
 let coor : coord = {
     x:1,
     age:12,
-    0:false, // error
+    // 1:false, // false 不是 number与 string类型 error
+    2:33, // 2 => '2'
 }
+console.log(coor)
+

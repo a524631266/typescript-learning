@@ -14,3 +14,18 @@ let fun2:(opt:Db)=>string = (opt)=>{
     return opt
 }
 
+interface func11{
+    (x:number):number
+}
+
+let add6:func11
+add6 = (x) =>{
+    return x
+}
+
+let add7 =(xss)=>{
+
+}
+add6 = add7 // 报错 不能赋值空返回值给ad6类型
+
+

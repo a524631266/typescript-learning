@@ -12,7 +12,7 @@ function drawPoint({x,y}:coord){
 drawPoint({x:10,y:20})
 
 
-
+// 接口的特点2 在参数内部可以
 interface LabelledValue {
     label: string;
 }
@@ -26,7 +26,7 @@ let myObj = {size: 10, label: "Size 10 Object"};
 printLabel(myObj);
 
 
-
+// 接口的特点2 在参数内部可以
 
 interface SquareConfig {
     color?: string;
