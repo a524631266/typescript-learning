@@ -51,3 +51,41 @@ function createSquare2(config:SquareConfig2):Square{
 
 let sq2 = createSquare2({color:"white",width:1000,height:2000}) // 2.height 无法在字面量中赋值
 console.log(sq2)
+
+
+// 3.
+class Animal {
+    name: string;
+}
+class Dog extends Animal {
+    breed: string;
+}
+
+
+interface NotOkay { // Dog类型会推断到Animal，同时x：number 转换成 x：string
+    [x: number]: Dog;
+    [x: string]: Animal;
+}
+
+class Animal1 extends Animal{
+    constructor(public name){
+        super()
+    }
+}
+class Dog1 extends Dog{
+    constructor(public name,public breed){
+        super()
+    }
+}
+let dd : NotOkay;
+dd = {
+    0: new Dog1("zz","brad"),
+    "zz":new Animal1("zz")
+}
+console.log(dd["0"])
+
+// 错误：使用数值型的字符串索引，有时会得到完全不同的Animal!
+interface NotOkay2 { // Dog类型会推断到Animal，同时x：number 转换成 x：string
+    [x: number]: Animal;
+    [x: string]: Dog;
+}

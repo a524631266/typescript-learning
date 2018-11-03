@@ -25,4 +25,3 @@ printLabel2(myObj2);
 
 
 
-

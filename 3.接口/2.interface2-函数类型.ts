@@ -30,4 +30,16 @@ let add7 =(xss)=>{
 }
 add6 = add7 // 报错 不能赋值空返回值给ad6类型
 
+// 3、混合类型 既有函数也有属性
+interface func3 {
+    (value:string):number
+    value1:number
+}
 
+let somefunc;
+somefunc = (value:string):func3=>{
+    let object = <func3>function(value){return 1}
+    object.value1 = 10 
+    return object
+}
+console.log(somefunc("a").value1); 
