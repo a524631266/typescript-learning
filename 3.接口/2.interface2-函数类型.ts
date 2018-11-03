@@ -2,7 +2,7 @@
 type Db =string;
 
 interface InitFunc{
-    (option:Db):string// 定义函数的参数是Db类型
+    (option:Db):string// 定义函数的参数是Db类型 ，在函数类型中的参数名可以任意取，即使后期声明函数时参数名不一样（理论熵来说，最好保持名称一致，好维护），但是类型要一致
 }
 // 方法1
 let fun1:InitFunc = function(ops:string){
@@ -14,9 +14,11 @@ let fun2:(opt:Db)=>string = (opt)=>{
     return opt
 }
 
+// 赋值不能乱赋值
 interface func11{
     (x:number):number
 }
+
 
 let add6:func11
 add6 = (x) =>{

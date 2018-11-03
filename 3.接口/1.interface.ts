@@ -48,3 +48,5 @@ return newSquare;
 // let mySquare = createSquare({color: "black",width:123,clor:"aa"});
 let obj = {color: "black",width:123,clor:"aa"}
 let mySquare2 = createSquare(obj);
+
+
